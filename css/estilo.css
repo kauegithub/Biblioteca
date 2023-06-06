@@ -1,0 +1,118 @@
+body{
+	margin: 0 auto;
+	width: 940px;
+	border: solid 2px blue;
+	text-align: center;
+}
+
+
+header{
+	display: flex;
+	margin: 0px 0px 0px 0px;
+	background-color: gray;
+	padding: 0px;
+
+}
+
+#header-up-right{
+	width: 50%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin: 0;
+	padding: 20px;
+
+}
+
+
+#header-up-left{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#header-up-left {
+	padding: 10px;
+	color: white;
+}
+
+
+header #header-up-right a{
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	font-size: 14pt;
+
+}
+
+
+
+header #header-up-right a:hover{
+	color: blue;
+}
+
+#imagem_menu_top{
+	margin: 50px auto 0px ;
+	width: 500px;
+	height: 100px;
+}
+
+
+
+#login-center{
+	display: block;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	margin: 20px 0px 0px 0px;
+
+}
+
+#text-cadastro{
+	text-align: center;
+	font-size: 20pt ;
+
+}
+
+#formulario{
+		display: flex;
+		justify-content: center;
+}
+
+.input_padrao{
+	display: flex;
+	margin: 0px 0px 30px 0px;
+	pading: 0px;
+
+
+}
+
+#enviar{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	color: blue;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+#cadastrar{
+	margin: 20px 0px 10px 0px;
+	padding: 5px;
+
+}
+
+#cadastrar:hover{
+	background-color: blue;
+	color: white;
+}
+.separacao{
+
+
+}
