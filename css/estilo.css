@@ -1,7 +1,7 @@
 body{
 	margin: 0 auto;
 	width: 940px;
-	border: solid 2px blue;
+	border: solid 2px black;
 	text-align: center;
 }
 
@@ -61,7 +61,7 @@ header #header-up-right a:hover{
 
 
 
-#login-center{
+#cadastro_center{
 	display: block;
 	margin: 20px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -85,8 +85,6 @@ header #header-up-right a:hover{
 	display: flex;
 	margin: 0px 0px 30px 0px;
 	pading: 0px;
-
-
 }
 
 #enviar{
@@ -102,17 +100,77 @@ header #header-up-right a:hover{
 
 
 
-#cadastrar{
+#cadastrar, #logar{
 	margin: 20px 0px 10px 0px;
 	padding: 5px;
-
 }
 
-#cadastrar:hover{
+#cadastrar:hover, #logar:hover{
 	background-color: blue;
 	color: white;
 }
-.separacao{
+
+
+
+
+footer{
+	color: white;
+	background-color: black;
+	margin: 10px 0px 0px 0px;
+}
+
+
+.popup-message{
+	width: 200px;
+	height: 60px;
+	position: fixed;
+	top: 20px;
+	left: calc(100% + 500px);
+	border-radius: 5px;
+	color: black;
+	font-size: 1.2em;
+	border-top: solid 10px transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	animation: slide_popup_message 5s 1;
+}
+
+.erro{
+	border-color: red;
+	background-color: #fffdb8;
+}
+.ok{
+	border-color: green;
+	background-color: #d2f7c1;
+}
+
+@keyframes slide_popup_message{
+	0%{
+		left: calc(100% - 30%);
+	}
+	90%{
+		left: calc(100% - 30%);
+	}
+	100%{
+		left: calc(100% + 500px);
+	}
+}
+
+#topo{
+	display: block;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+
+}
+
+
+.input_login_padrao{
+	margin: 10px auto;
+	display: block;
 
 
 }

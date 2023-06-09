@@ -6,17 +6,29 @@
 	<link rel = "stylesheet" href = "css/estilo.css">
 </head>
 <body>
-	<header>
-		<div id="header-up-left">
-			<h2>Biblioteca</h2>
-		</div>
-		<div id="header-up-right">
-			<a href=' ./cadastro.php' id= "">Cadastre-se</a>
-			<a href=' ./cadastro.php' id="link-login">Login</a>
-		</div>			
-	</header>
+	<?php
+	session_start();
+	if(isset($_SESSION['cadastro'])){
+		$cadastro= $_SESSION['cadastro'];
+
+		if($cadastro){
+			echo " <div class= 'popup-message erro'>
+			Erro ao Cadastrar.
+			</div>
+			";
+		}else{
+			echo " <div class= 'popup-message ok'>
+			Cadastro realizado.
+			</div>
+			";
+		}
+
+		session_unset();
+	}
+
+	?>
 	<main>
-		<div id="login-center">
+		<div id="cadastro-center">
 			<div>
 			 	<h2 id= "text-cadastro"> Realize o seu Cadastro</h2>
 			</div>
@@ -43,11 +55,11 @@
 						<label class= "separacao">_______________</label>
 					</div>
 				</form>
-			</div>
-			
+			</div>		
 		</div>
 	<main>
-	<footer>		
-	</footer>
+		<?php
+		include 'footer.php'
+		?>
 </body>
 </html>

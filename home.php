@@ -20,8 +20,9 @@
 				<img src="medias/biblioteca.jpg" id= "imagem_menu_top">
 			</div>
 	<main>
-	<footer>		
-	</footer>
+		<?php
+		include 'footer.php'
+		?>
 </body>
 </html>
 

@@ -7,22 +7,24 @@ $senha = $_POST['senha'];
 $data_nasc = $_POST['data_nasc'];
 $pais = $_POST['pais'];
 
-$cadastro_realizado=false;
 
-if (strlen($data_nasc)==10){
-	$q = "INSERT INTO usuarios VALUES (0, '$nome', '$login', '$senha', 'data_nasc', '$pais')";
+
+
+if (strlen($data_nasc) == 10){
+	$q = "INSERT INTO usuarios VALUES (0, '$nome', '$login', '$senha', '$data_nasc', '$pais')";
 	$result = $phpconnect->query($q);
-	if ($result==false){
-		$cadastro_realizado = false;
+	$cadastro_concluido=false;
+	}else{
+	$cadastro_concluido = true;
 	}
-	else{
-	$cadastro_realizado = true;
-	}
-}
 
+
+	
 	session_start();
-	$_SESSION['cadastro_realizado'] = $cadastro_realizado;
+	$_SESSION['cadastro'] = $cadastro_concluido;
 
+
+	header('Location: '.' ../cadastro.php')
 
 
 ?>
